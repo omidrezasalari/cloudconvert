@@ -1,0 +1,21 @@
+{
+    "name": "omidrezasalari/cloudconvert",
+    "description": "convert to webmp to mp4",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Omidrezasalari\\Cloudconvert\\": "src/"
+        }
+    },
+    "autoload-dev": {},
+    "authors": [{
+        "name": "Omid",
+        "email": "omidsalari199@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "cloudconvert/cloudconvert-php": "dev-master",
+        "php-http/guzzle7-adapter": "1.x-dev"
+    }
+}
