@@ -30,14 +30,35 @@ const API_KEY = "Your personal API..."
 ```php
 require_once __DIR__ . '/vendor/autoload.php';
 
-use Omidrezasalari\Cloudconvert\Classes\Url;
+use Omidrezasalari\Cloudconvert\Classes\CloudConvert;
+use Omidrezasalari\Cloudconvert\Classes\ConvertWithUrl;
 
 # returns 'export_url'
 
-$filename="example.webm"
+$fileName="example.webm"
 
-$urlVideo = new Url;
-return $urlVideo->convert($filename);
+
+function clientCode(CloudConvert $client,string $fileName)
+{
+
+    $convertor=$client->createConvertor();
+
+    echo $convertor->convert($fileName);
+  
+}
+
+// Real example 
+
+function clientCode(new ConvertWithUrl ,string $fileName)
+{
+    
+    $convertor=$client->createConvertor();
+
+    echo $convertor->convert($fileName);
+    
+}
+
+
 
 ```
 

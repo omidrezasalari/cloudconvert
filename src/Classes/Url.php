@@ -6,11 +6,11 @@ use \CloudConvert\CloudConvert;
 use \CloudConvert\Models\Job;
 use \CloudConvert\Models\Task;
 
-class Url extends Convert
+class Url extends ConvertType
 {
     public const URL = "Your video path";
 
-    public function convert(string $fileName)
+    public function convert($fileName)                   
     {
         $cloudconvert = new CloudConvert(['api_key' => self::API_KEY]);
 

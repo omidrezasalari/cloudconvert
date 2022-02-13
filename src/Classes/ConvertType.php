@@ -2,9 +2,9 @@
 
 namespace Omidrezasalari\Cloudconvert\Classes;
 
-abstract class Convert
+abstract class ConvertType
 {
     public const API_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXXX";
 
-    abstract public function convert(string $fileName);
+    public abstract function convert($validData);
 }
